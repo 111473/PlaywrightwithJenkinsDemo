@@ -22,5 +22,5 @@ test('Record at cursor test', async ({ page }) => {
     await expect(page.getByRole('link', { name: 'Playwright API Testing Tutorial Crash Course' })).toBeVisible();
     await expect(page.getByLabel('Playwright Tutorial Full Course 2024').locator('#video-title')).toContainText('Playwright Tutorial Full Course 2024 | Playwright Testing Tutorial');
     await expect(page.getByLabel('Playwright API Testing Tutorial Crash Course 2024').locator('#video-title')).toContainText('Playwright API Testing Tutorial Crash Course 2024');
-});
+}); 
 

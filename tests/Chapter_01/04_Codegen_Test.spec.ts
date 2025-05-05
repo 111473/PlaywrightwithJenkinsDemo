@@ -11,7 +11,7 @@ test('Codegen test case', { tag: ['@PlaywrightWithJenkins'] }, async ({ page }) 
   await page.getByRole('link', { name: 'Playwright by Testers Talk☑️' }).click();
   await page.locator('video').click();
   await expect(page.getByRole('link', { name: 'Playwright by Testers Talk☑️' })).toBeVisible();
-});
+}); 
 
 /**
  * Author Testers Talk

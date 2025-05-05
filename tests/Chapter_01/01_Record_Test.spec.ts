@@ -16,7 +16,7 @@ test('[3] Record a test', { tag: ['@PlaywrightWithAzureDevOpsPipeline','@Playwri
     await page.getByLabel('Username or email address').fill('testerstalk');
     await page.getByLabel('Password').click();
     await page.getByLabel('Password').fill('test123');
-  });
+  }); 
 
   await test.step('Click on sign in', async () => {
     await page.getByRole('button', { name: 'Sign in', exact: true }).click();
