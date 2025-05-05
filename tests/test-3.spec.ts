@@ -1,0 +1,37 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.google.com/');
+  await page.getByRole('combobox', { name: 'Search' }).click();
+  await page.getByRole('combobox', { name: 'Search' }).fill('Playwright by testers talk');
+  // await page.goto('https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DPlaywright%2Bby%2Btesters%2Btalk%26sca_esv%3D7b0f43a5d44a29e0%26source%3Dhp%26ei%3D15ITaNDvNbjN1e8P-pSB4AE%26iflsig%3DACkRmUkAAAAAaBOg59HvCU2X0etlmjWYPu9ioll6nbFB%26ved%3D0ahUKEwiQt5rbyoKNAxW4ZvUHHXpKABwQ4dUDCB8%26uact%3D5%26oq%3DPlaywright%2Bby%2Btesters%2Btalk%26gs_lp%3DEgdnd3Mtd2l6IhpQbGF5d3JpZ2h0IGJ5IHRlc3RlcnMgdGFsa0ighwFQqhRY2HtwAXgAkAEAmAFXoAHFDqoBAjI2uAEDyAEA-AEBmAIToAKICqgCCsICChAAGAMY6gIYjwHCAgoQLhgDGOoCGI8BwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBwgIOEAAYgAQYsQMYgwEYigXCAgUQABiABMICCxAuGIAEGNEDGMcBwgINEAAYgAQYsQMYRhj5AcICBRAuGIAEwgIGEAAYFhgewgIIEAAYFhgKGB7CAgsQABiABBiGAxiKBcICCBAAGIAEGKIEwgIFEAAY7wXCAggQABiiBBiJBZgDA_EFuYyNrCaOG5KSBwIxOaAH83WyBwIxOLgHhQo%26sclient%3Dgws-wiz%26sei%3D7pITaKuXA--YnesPgJiayQ0&q=EgSInnliGO6lzsAGIjCzfIKZV1ImLyY27tLwVOUQSG19n3fiwCo5f9ezbYOxFfRvVbNYGIuzqOJQ7GcDueQyAnJSWgFD');
+  // await page.locator('iframe[name="a-rgybq5kbkvth"]').contentFrame().getByRole('checkbox', { name: 'I\'m not a robot' }).click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(3) > td:nth-child(3)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(2) > td:nth-child(3)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(3) > td:nth-child(4)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(2) > td:nth-child(4)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(4) > td:nth-child(3)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(4) > td:nth-child(4)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().getByRole('button', { name: 'Next' }).click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(3) > td').first().click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(3) > td:nth-child(2)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(2) > td:nth-child(2)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(2) > td').first().click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(2) > td:nth-child(3)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(2) > td:nth-child(4)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('td:nth-child(4)').first().click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(4) > td').first().click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('tr:nth-child(3) > td:nth-child(4)').click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().getByRole('button', { name: 'Verify' }).click();
+  // await page.locator('iframe[name="c-rgybq5kbkvth"]').contentFrame().locator('.rc-canonical-car').click();
+  await page.goto('https://www.google.com/search?q=Playwright+by+testers+talk&sca_esv=7b0f43a5d44a29e0&source=hp&ei=15ITaNDvNbjN1e8P-pSB4AE&iflsig=ACkRmUkAAAAAaBOg59HvCU2X0etlmjWYPu9ioll6nbFB&ved=0ahUKEwiQt5rbyoKNAxW4ZvUHHXpKABwQ4dUDCB8&uact=5&oq=Playwright+by+testers+talk&gs_lp=Egdnd3Mtd2l6IhpQbGF5d3JpZ2h0IGJ5IHRlc3RlcnMgdGFsa0ighwFQqhRY2HtwAXgAkAEAmAFXoAHFDqoBAjI2uAEDyAEA-AEBmAIToAKICqgCCsICChAAGAMY6gIYjwHCAgoQLhgDGOoCGI8BwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBwgIOEAAYgAQYsQMYgwEYigXCAgUQABiABMICCxAuGIAEGNEDGMcBwgINEAAYgAQYsQMYRhj5AcICBRAuGIAEwgIGEAAYFhgewgIIEAAYFhgKGB7CAgsQABiABBiGAxiKBcICCBAAGIAEGKIEwgIFEAAY7wXCAggQABiiBBiJBZgDA_EFuYyNrCaOG5KSBwIxOaAH83WyBwIxOLgHhQo&sclient=gws-wiz&sei=FJMTaPLzM6rgseMP2a-NmA8');
+  await page.locator('#slim_appbar').click();
+  await page.getByText('Accessibility LinksSkip to').press('ArrowDown');
+  await page.getByText('Accessibility LinksSkip to').press('ArrowDown');
+  await page.getByText('Accessibility LinksSkip to').press('ArrowDown');
+  await page.getByText('Accessibility LinksSkip to').press('ArrowDown');
+  await page.getByText('Accessibility LinksSkip to').press('ArrowDown');
+  await page.getByText('Accessibility LinksSkip to').press('ArrowDown');
+  await page.getByText('Accessibility LinksSkip to').press('ArrowDown');
+  await page.getByText('Accessibility LinksSkip to').press('ArrowDown');
+});
